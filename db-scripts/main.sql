@@ -46,7 +46,6 @@ CREATE TABLE order_detail
     CONSTRAINT fk_item_bar_code FOREIGN KEY (item_code) REFERENCES item (bar_code)
 );
 
-
 INSERT INTO customer (id, name)
 VALUES ('C001', 'Asiri'),
        ('C002', 'Sappa'),
