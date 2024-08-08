@@ -1,8 +1,6 @@
-CREATE
-    DATABASE dep12_join_example_2;
+CREATE DATABASE dep12_join_example_2;
 
-USE
-    dep12_join_example_2;
+USE dep12_join_example_2;
 
 CREATE TABLE customer
 (
@@ -43,7 +41,7 @@ CREATE TABLE order_detail
     price     DECIMAL(10, 2) NOT NULL,
     CONSTRAINT pk_order_detail PRIMARY KEY (order_id, item_code),
     CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES `order` (id),
-    CONSTRAINT fk_item_bar_code FOREIGN KEY (item_code) REFERENCES item (bar_code)
+    CONSTRAINT fk_item_code FOREIGN KEY (item_code) REFERENCES item (bar_code)
 );
 
 INSERT INTO customer (id, name)
@@ -83,6 +81,6 @@ VALUES ('OD001', 'I001', 1, 10.00),
        ('OD003', 'I005', 2, 50.00),
        ('OD003', 'I006', 1, 60.00),
        ('OD004', 'I001', 4, 70.00),
-       ('OD004', 'T002', 2, 80.00),
+       ('OD004', 'I002', 2, 80.00),
        ('OD005', 'I003', 5, 90.00),
        ('OD005', 'I004', 1, 100.00);
