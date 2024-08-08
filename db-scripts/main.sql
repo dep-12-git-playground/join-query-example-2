@@ -13,9 +13,9 @@ CREATE TABLE customer
 CREATE TABLE item
 (
     bar_code    VARCHAR(50) PRIMARY KEY,
-    description VARCHAR(150)   NOT NULL,
-    stock       INT            NOT NULL,
-    price       DECIMAL(10, 2) NOT NULL
+    description VARCHAR(150)  NOT NULL,
+    stock       INT           NOT NULL,
+    price       DECIMAL(9, 2) NOT NULL
 );
 
 CREATE TABLE user
@@ -34,6 +34,19 @@ CREATE TABLE `order`
     CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES customer (id),
     CONSTRAINT fk_user FOREIGN KEY (username) REFERENCES user (username)
 );
+
+INSERT INTO user (username, name, password) VALUES ('U001', 'Kasun', 123),
+                                                   ('U002', 'Nuwan', 123),
+                                                   ('U00', 'Ruwan', 123),
+                                                   ('U004', 'Chamika', 123),
+                                                   ('U005', 'Yasith', 123),
+                                                   ('U006', 'Buddika', 123),
+                                                   ('U007', 'Imantha', 123),
+                                                   ('U008', 'Tharindu', 123),
+                                                   ('U009', 'Sappa', 123),
+                                                   ('U010', 'Asiri', 123);
+
+
 
 CREATE TABLE order_detail
 (
