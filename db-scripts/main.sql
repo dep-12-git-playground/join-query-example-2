@@ -44,3 +44,11 @@ CREATE TABLE order_detail(
                              CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES `order`(id),
                              CONSTRAINT fk_item_bar_code FOREIGN KEY (item_bar_code) REFERENCES item(bar_code)
 );
+
+
+INSERT INTO order_detail (order_id, bar_code, price, qty) VALUES
+                                                              ('OD001','B001',2500.00,2),
+                                                              ('OD002','B002',750.00,1),
+                                                              ('OD003','B003',1500.00,1),
+                                                              ('OD004','B004',150000.00,1),
+                                                              ('OD005','B005',6400.00,2);
