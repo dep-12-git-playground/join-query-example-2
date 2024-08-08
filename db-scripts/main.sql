@@ -75,3 +75,9 @@ VALUES
     ('OD003', '2024-01-10', 'C003', 'ruwan'),
     ('OD004', '2024-02-15', 'C004', 'upul'),
     ('OD005', '2024-03-20', 'C005', 'asiri');
+
+INSERT INTO order_detail (order_id, item_code, qty, price)
+VALUES
+    ('OD001', 'I001', 2, 1250.00),
+    ('OD001', 'I002', 1, 1250.00),
+    ('OD001', 'I003', 3, 8000.00);
