@@ -1,8 +1,8 @@
 CREATE
-DATABASE dep12_join_example_2;
+    DATABASE dep12_join_example_2;
 
 USE
-dep12_join_example_2;
+    dep12_join_example_2;
 
 CREATE TABLE customer
 (
@@ -69,9 +69,8 @@ VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
        ('asiri', 'Asiri Kariyawasam', 'asiri123');
 
 INSERT INTO `order` (id, date, customer_id, username)
-VALUES
-    ('OD001', '2023-11-15', 'C001', 'kasun'),
-    ('OD002', '2023-12-02', 'C002', 'nuwan'),
-    ('OD003', '2024-01-10', 'C003', 'ruwan'),
-    ('OD004', '2024-02-15', 'C004', 'upul'),
-    ('OD005', '2024-03-20', 'C005', 'asiri');
+VALUES ('OD001', '2023-11-15', 'C001', 'kasun'),
+       ('OD002', '2023-12-02', 'C002', 'nuwan'),
+       ('OD003', '2024-01-10', 'C003', 'ruwan'),
+       ('OD004', '2024-02-15', 'C004', 'upul'),
+       ('OD005', '2024-03-20', 'C005', 'asiri');
