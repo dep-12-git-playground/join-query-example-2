@@ -1,8 +1,8 @@
 CREATE
-DATABASE dep12_join_example_2;
+    DATABASE dep12_join_example_2;
 
 USE
-dep12_join_example_2;
+    dep12_join_example_2;
 
 CREATE TABLE customer
 (
@@ -67,6 +67,17 @@ VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
        ('ruwan', 'Ruwan Lakmal', 'ruwan123'),
        ('upul', 'Upul Tharanga', 'upul123'),
        ('asiri', 'Asiri Kariyawasam', 'asiri123');
+
+INSERT INTO order_detail (order_id, item_code, qty, price) VALUES ('OD003', 'I001', 72, 4000.20),
+                                                                  ('OD003', 'I002', 22, 8000.20),
+                                                                  ('OD002', 'I005', 46, 7000.20),
+                                                                  ('OD001', 'I006', 94, 4000.20),
+                                                                  ('OD004', 'I002', 13, 5000.20),
+                                                                  ('OD003', 'I006', 75, 2400.20),
+                                                                  ('OD004', 'I002', 58, 4200.20),
+                                                                  ('OD004', 'I001', 10, 9900.20),
+                                                                  ('OD002', 'I004', 40, 3100.20),
+                                                                  ('OD005', 'I003', 30, 1000.20);
 
 INSERT INTO `order` (id, date, customer_id, username)
 VALUES
