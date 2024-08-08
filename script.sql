@@ -25,3 +25,10 @@ CREATE TABLE "order"
     CONSTRAINT fk_customer_id FOREIGN KEY (customer_id) REFERENCES customer,
     CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES "user"
 );
+
+CREATE TABLE item(
+                     bar_code VARCHAR(50) PRIMARY KEY ,
+                     description VARCHAR(150) NOT NULL ,
+                     stock INT NOT NULL ,
+                     price DECIMAL
+);
