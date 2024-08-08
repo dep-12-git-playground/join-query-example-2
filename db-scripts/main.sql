@@ -71,8 +71,8 @@ VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
 
 INSERT INTO `order` (id, date, customer_id, username)
 VALUES
-    ('OD001', '2023-11-15', 'C001', 'john.doe@gmail.com'),
-    ('OD002', '2023-12-02', 'C002', 'jane.smith@yahoo.com'),
-    ('OD003', '2024-01-10', 'C003', 'michael.johnson@hotmail.com'),
-    ('OD004', '2024-02-15', 'C004', 'emily.brown@gmail.com'),
-    ('OD005', '2024-03-20', 'C005', 'david.miller@ijse.lk');
+    ('OD001', '2023-11-15', 'C001', 'kasun'),
+    ('OD002', '2023-12-02', 'C002', 'nuwan'),
+    ('OD003', '2024-01-10', 'C003', 'ruwan'),
+    ('OD004', '2024-02-15', 'C004', 'upul'),
+    ('OD005', '2024-03-20', 'C005', 'asiri');
