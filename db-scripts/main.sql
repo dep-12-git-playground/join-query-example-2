@@ -18,14 +18,14 @@ CREATE TABLE item
     price       DECIMAL(9, 2) NOT NULL
 );
 
-CREATE TABLE `user`
+CREATE TABLE user
 (
     username VARCHAR(100) PRIMARY KEY,
     name     VARCHAR(100) NOT NULL,
     password VARCHAR(300) NOT NULL
 );
 
-CREATE TABLE "order"(
+CREATE TABLE `order`(
                           id VARCHAR(10) Primary Key,
                           date DATE NOT NULL,
                           customer_id VARCHAR(10) NOT NULL,
