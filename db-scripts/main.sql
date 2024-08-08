@@ -14,8 +14,9 @@ CREATE TABLE item
     stock       INT           NOT NULL,
     price       DECIMAL(9, 2) NOT NULL
 );
-create table "user"(
-                       username varchar(100) primary key ,
-                       name varchar(200),
-                       password varchar(300)
-);
+INSERT INTO "user" (username, name, password) VALUES
+                                                  ('john_doe', 'John Doe', 'password123'),
+                                                  ('jane_smith', 'Jane Smith', 'securepassword456'),
+                                                  ('alice_jones', 'Alice Jones', 'password789'),
+                                                  ('bob_brown', 'Bob Brown', 'passw0rd101112'),
+                                                  ('charlie_black', 'Charlie Black', 'mypassword131415');
