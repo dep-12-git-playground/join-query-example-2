@@ -1,4 +1,4 @@
-#!/usr/bin bash
+#!/usr/bin/sh
 
 echo "Starting the application"
 docker compose up -d
