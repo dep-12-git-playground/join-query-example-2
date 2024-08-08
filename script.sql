@@ -18,6 +18,7 @@ CREATE TABLE "order"(
                         CONSTRAINT fk_user FOREIGN KEY (user_name) REFERENCES "user"(username)
 
                             INSERT INTO "order"(order_id, "date", customer_id, user_name) VALUES
+
                             ('OD001','2024-08-07','C001','U001'),
                             ('OD002','2024-08-07','C002','U004'),
                             ('OD003','2024-08-07','C003','U005'),
