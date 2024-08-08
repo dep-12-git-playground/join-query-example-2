@@ -11,7 +11,7 @@
    ```
 3. Connect with the database
     ```shell
-   docker exec -it mysql_container mysql -u root -pmysql --port 5050
+   docker exec -it mysql_db mysql -u root -pmysql --port 5050
     ```
 
 ### Version
