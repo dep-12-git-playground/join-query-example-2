@@ -10,3 +10,4 @@ CREATE TABLE order(
     CONSTRAINT fk_customer FOREIGN KEY(customer_id) REFERENCES customer(id),
     CONSTRAINT fk_user FOREIGN KEY(username) REFERENCES user(username)
 );
+
