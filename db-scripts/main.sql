@@ -35,3 +35,12 @@ CREATE TABLE `order`
     CONSTRAINT fk_user FOREIGN KEY (username) REFERENCES user (username)
 );
 
+CREATE TABLE order_detail(
+                             order_id VARCHAR(10) NOT NULL,
+                             item_bar_code VARCHAR(50) NOT NULL,
+                             qty INT NOT NULL,
+                             price DECIMAL(10,2),
+                             CONSTRAINT pk_order_detail PRIMARY KEY (order_id,item_bar_code),
+                             CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES `order`(id),
+                             CONSTRAINT fk_item_bar_code FOREIGN KEY (item_bar_code) REFERENCES item(bar_code)
+);
