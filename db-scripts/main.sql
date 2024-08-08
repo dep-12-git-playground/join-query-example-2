@@ -14,3 +14,8 @@ CREATE TABLE item
     stock       INT           NOT NULL,
     price       DECIMAL(9, 2) NOT NULL
 );
+create table "user"(
+                       username varchar(100) primary key ,
+                       name varchar(200),
+                       password varchar(300)
+);
