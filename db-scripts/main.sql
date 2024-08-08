@@ -1,10 +1,13 @@
-CREATE DATABASE dep12_join_example_2;
+CREATE
+DATABASE dep12_join_example_2;
 
-USE dep12_join_example_2;
+USE
+dep12_join_example_2;
 
-CREATE TABLE customer(
-  id VARCHAR(10) PRIMARY KEY,
-  name VARCHAR(100) NOT NULL
+CREATE TABLE customer
+(
+    id   VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE item
@@ -25,3 +28,9 @@ INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('75.00','1','BAR
 INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('200.00','2','BAR00007','OD004');
 INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('500.00','3','BAR00002','OD004');
 INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('140.00','5','BAR00008','OD005');
+CREATE TABLE `user`
+(
+    username VARCHAR(100) PRIMARY KEY,
+    name     VARCHAR(100) NOT NULL,
+    password VARCHAR(300) NOT NULL
+);
