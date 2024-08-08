@@ -13,9 +13,9 @@ CREATE TABLE customer
 CREATE TABLE item
 (
     bar_code    VARCHAR(50) PRIMARY KEY,
-    description VARCHAR(150)   NOT NULL,
-    stock       INT            NOT NULL,
-    price       DECIMAL(10, 2) NOT NULL
+    description VARCHAR(150)  NOT NULL,
+    stock       INT           NOT NULL,
+    price       DECIMAL(9, 2) NOT NULL
 );
 
 CREATE TABLE user
