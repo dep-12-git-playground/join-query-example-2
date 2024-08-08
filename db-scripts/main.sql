@@ -61,3 +61,10 @@ VAlUES ('I001', 'Mouse', 10, 1250.00),
        ('I004', 'Mouse Pad', 20, 500.00),
        ('I005', 'Smart Watch', 15, 12500.00),
        ('I006', 'Blue Screen Filter', 15, 750.00);
+
+INSERT INTO user (username, name, password)
+VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
+       ('nuwan', 'Nuwan Ramindu', 'nuwan123'),
+       ('ruwan', 'Ruwan Lakmal', 'ruwan123'),
+       ('upul', 'Upul Tharanga', 'upul123'),
+       ('asiri', 'Asiri Kariyawasam', 'asiri123');
