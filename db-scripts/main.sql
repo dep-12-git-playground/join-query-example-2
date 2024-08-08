@@ -18,6 +18,16 @@ CREATE TABLE item
     price       DECIMAL(9, 2) NOT NULL
 );
 
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('300.00','2','BAR00001','OD001');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('500.00','3','BAR00002','OD001');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('150.00','1','BAR00003','OD001');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('200.00','4','BAR00004','OD002');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('100.00','3','BAR00005','OD002');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('150.00','5','BAR00003','OD003');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('75.00','1','BAR00006','OD004');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('200.00','2','BAR00007','OD004');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('500.00','3','BAR00002','OD004');
+INSERT INTO order_item (price, qty, bar_code, order_id) VALUES ('140.00','5','BAR00008','OD005');
 CREATE TABLE `user`
 (
     username VARCHAR(100) PRIMARY KEY,
