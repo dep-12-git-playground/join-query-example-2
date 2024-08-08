@@ -13,9 +13,9 @@ CREATE TABLE customer
 CREATE TABLE item
 (
     bar_code    VARCHAR(50) PRIMARY KEY,
-    description VARCHAR(150)   NOT NULL,
-    stock       INT            NOT NULL,
-    price       DECIMAL(10, 2) NOT NULL
+    description VARCHAR(150)  NOT NULL,
+    stock       INT           NOT NULL,
+    price       DECIMAL(9, 2) NOT NULL
 );
 
 CREATE TABLE user
@@ -34,6 +34,19 @@ CREATE TABLE `order`
     CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES customer (id),
     CONSTRAINT fk_user FOREIGN KEY (username) REFERENCES user (username)
 );
+
+INSERT INTO user (username, name, password) VALUES ('U001', 'Kasun', 123),
+                                                   ('U002', 'Nuwan', 123),
+                                                   ('U00', 'Ruwan', 123),
+                                                   ('U004', 'Chamika', 123),
+                                                   ('U005', 'Yasith', 123),
+                                                   ('U006', 'Buddika', 123),
+                                                   ('U007', 'Imantha', 123),
+                                                   ('U008', 'Tharindu', 123),
+                                                   ('U009', 'Sappa', 123),
+                                                   ('U010', 'Asiri', 123);
+
+
 
 CREATE TABLE order_detail
 (
@@ -67,6 +80,17 @@ VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
        ('ruwan', 'Ruwan Lakmal', 'ruwan123'),
        ('upul', 'Upul Tharanga', 'upul123'),
        ('asiri', 'Asiri Kariyawasam', 'asiri123');
+
+INSERT INTO order_detail (order_id, item_code, qty, price) VALUES ('OD003', 'I001', 72, 4000.20),
+                                                                  ('OD003', 'I002', 22, 8000.20),
+                                                                  ('OD002', 'I005', 46, 7000.20),
+                                                                  ('OD001', 'I006', 94, 4000.20),
+                                                                  ('OD004', 'I002', 13, 5000.20),
+                                                                  ('OD003', 'I006', 75, 2400.20),
+                                                                  ('OD004', 'I002', 58, 4200.20),
+                                                                  ('OD004', 'I001', 10, 9900.20),
+                                                                  ('OD002', 'I004', 40, 3100.20),
+                                                                  ('OD005', 'I003', 30, 1000.20);
 
 INSERT INTO `order` (id, date, customer_id, username)
 VALUES ('OD001', '2023-11-15', 'C001', 'kasun'),
