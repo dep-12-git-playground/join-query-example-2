@@ -1,8 +1,8 @@
 CREATE
-DATABASE dep12_join_example_2;
+    DATABASE dep12_join_example_2;
 
 USE
-dep12_join_example_2;
+    dep12_join_example_2;
 
 CREATE TABLE customer
 (
@@ -13,9 +13,9 @@ CREATE TABLE customer
 CREATE TABLE item
 (
     bar_code    VARCHAR(50) PRIMARY KEY,
-    description VARCHAR(150)   NOT NULL,
-    stock       INT            NOT NULL,
-    price       DECIMAL(10, 2) NOT NULL
+    description VARCHAR(150)  NOT NULL,
+    stock       INT           NOT NULL,
+    price       DECIMAL(9, 2) NOT NULL
 );
 
 CREATE TABLE user
@@ -46,6 +46,7 @@ CREATE TABLE order_detail
     CONSTRAINT fk_item_bar_code FOREIGN KEY (item_code) REFERENCES item (bar_code)
 );
 
+
 INSERT INTO customer (id, name)
 VALUES ('C001', 'Asiri'),
        ('C002', 'Sappa'),
@@ -75,3 +76,12 @@ VALUES
     ('OD003', '2024-01-10', 'C003', 'ruwan'),
     ('OD004', '2024-02-15', 'C004', 'upul'),
     ('OD005', '2024-03-20', 'C005', 'asiri');
+
+
+INSERT INTO order_detail (order_id, item_code, qty, price)
+VALUES
+    ('O001', 'I001', 2, 1250.00),
+    ('O001', 'I002', 1, 1250.00),
+    ('O002', 'I003', 1, 8000.00),
+    ('O003', 'I004', 5, 500.00),
+    ('O004', 'I005', 1, 12500.00);
