@@ -5,3 +5,5 @@
 
 ### License
 Copyright &copy; 2024 DEP-12. All Rights Reserved.
+
+Project is licensed under the [MIT](LICENSE.txt) License.
