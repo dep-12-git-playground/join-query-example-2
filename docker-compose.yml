@@ -1,9 +1,9 @@
 services:
-  mysql_container:
+  database:
     image: mysql
     ports:
       - 5050:3306
-    container_name: mysql
+    container_name: mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: mysql
     volumes:
