@@ -57,7 +57,9 @@ VAlUES ('I001', 'Mouse', 10, 1250.00),
        ('I003', 'Monitor', 4, 8000.00),
        ('I004', 'Mouse Pad', 20, 500.00),
        ('I005', 'Smart Watch', 15, 12500.00),
-       ('I006', 'Blue Screen Filter', 15, 750.00);
+       ('I006', 'Blue Screen Filter', 15, 750.00),
+       ('I007', 'USB Stick', 8, 4250.00),
+       ('I008', 'Mini USB Projector', 5, 19200.00);
 
 INSERT INTO user (username, name, password)
 VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
