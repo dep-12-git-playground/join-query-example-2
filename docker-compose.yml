@@ -1,5 +1,5 @@
 services:
-  mysql:
+  mysql_container:
     image: mysql
     ports:
       - 5050:3306
