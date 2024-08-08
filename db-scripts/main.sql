@@ -52,3 +52,11 @@ CREATE TABLE order_detail
     CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES `order` (id),
     CONSTRAINT fk_item_bar_code FOREIGN KEY (item_code) REFERENCES item (bar_code)
 );
+
+INSERT INTO `order` (id, date, customer_id, username)
+VALUES
+    ('O0001', '2024-08-08', 'C0001', 'Kumarasinghe'),
+    ('O0002', '2024-08-08', 'C0002', 'Perera'),
+    ('O0003', '2024-08-08', 'C0003', 'Fernando'),
+    ('O0004', '2024-08-08', 'C0004', 'Wijesinghe'),
+    ('O0005', '2024-08-08', 'C0005', 'Jayawardena');
