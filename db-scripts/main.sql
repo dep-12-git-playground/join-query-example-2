@@ -1,8 +1,8 @@
 CREATE
-    DATABASE dep12_join_example_2;
+DATABASE dep12_join_example_2;
 
 USE
-    dep12_join_example_2;
+dep12_join_example_2;
 
 CREATE TABLE customer
 (
@@ -10,19 +10,30 @@ CREATE TABLE customer
     name VARCHAR(100) NOT NULL
 );
 
+INSERT INTO customer VALUES
+                         ("C001", "Ruwan"),
+                         ("C002", "Nuwan"),
+                         ("C003", "Supun"),
+                         ("C004", "Sandun"),
+                         ("C005", "Saman");
+
 CREATE TABLE item
 (
     bar_code    VARCHAR(50) PRIMARY KEY,
-    description VARCHAR(150)   NOT NULL,
-    stock       INT            NOT NULL,
-    price       DECIMAL(10, 2) NOT NULL
+    description VARCHAR(150)  NOT NULL,
+    stock       INT           NOT NULL,
+    price       DECIMAL(9, 2) NOT NULL
 );
 
-CREATE TABLE user
+CREATE TABLE `user`
 (
     username VARCHAR(100) PRIMARY KEY,
     name     VARCHAR(100) NOT NULL,
     password VARCHAR(300) NOT NULL
+);
+CREATE TABLE order(
+    id VARCHAR(10) PRIMARY KEY ,
+    date DATE NOT NULL
 );
 
 CREATE TABLE `order`
